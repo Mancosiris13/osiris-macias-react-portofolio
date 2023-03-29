@@ -22,13 +22,13 @@ const Skill = () => {
               <span className="px-5">React.Js</span>
             </li>
             <li>
-              <span className="px-5">React Hooks</span>
+              <span className="px-5">Node.Js</span>
+            </li>
+            <li>
+              <span className="px-5">Express.Js</span>
             </li>
             <li>
               <span className="px-5">Web Services</span>
-            </li>
-            <li>
-              <span className="px-5">Next.Js</span>
             </li>
             <li>
               <span className="px-5">Responsive CSS</span>
