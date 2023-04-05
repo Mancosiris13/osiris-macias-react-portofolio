@@ -50,7 +50,7 @@ const Skill = () => {
               <span className="px-5">Postman</span>
             </li>
             <li>
-              <span className="px-5">MySQL</span>
+              <span className="px-5">MongoDB</span>
             </li>
             <li>
               <span className="px-5">AWS</span>
