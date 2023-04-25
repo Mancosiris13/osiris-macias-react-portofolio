@@ -1,14 +1,62 @@
 import React from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import osidevsito from '../media/osidevsito.jpg';
+import { SiGmail } from 'react-icons/si';
+import { BsWhatsapp } from 'react-icons/bs';
+import osidevsito from '../media/ProfilePictureOsiris.jfif';
+import linkedInLight from '../media/LinkedInLight.jpg';
+import linkedInDark from '../media/LinkedInDark.jpg';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 const NavBar = ({ darkMode, setDarkMode }) => {
   return (
-    <section className="min-h-screen">
+    <section className="min-h-min" id="aboutMe">
       <nav className="py-10 mb-12 flex justify-between">
-        <h1 className="text-xl font-burtons dark:text-white">
+        <h1 className="text-xl font-burtons dark:text-white italic">
           DevelopbyOsiris
         </h1>
+
+        <ul className="flex items-center text-xl font-burtons dark:text-white">
+          <li className="px-4">
+            <ScrollLink
+              activeClass="active"
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out"
+            >
+              About Me
+            </ScrollLink>
+          </li>
+          <li className="px-4">
+            <ScrollLink
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className=" cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out"
+            >
+              Skills
+            </ScrollLink>
+          </li>
+          <li className="px-4">
+            <ScrollLink
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className=" cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out"
+            >
+              Portfolio
+            </ScrollLink>
+          </li>
+        </ul>
         <ul className="flex items-center">
           <li>
             <BsFillMoonStarsFill
@@ -27,35 +75,6 @@ const NavBar = ({ darkMode, setDarkMode }) => {
           </li>
         </ul>
       </nav>
-      <div className="text-center p-10">
-        <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-          Osiris Macias
-        </h2>
-        <h3 className="text-2xl py-2 md-text-3xl dark:text-blue-300">
-          Frontend Developer
-        </h3>
-        <p className="text-lg py-5 leading-8  text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
-          Likable, dedicated and quick learner Frontend Developer with over 1
-          year of experience in learning, creating and maintaining code. Feel
-          free to reach me out and lets get cracking!
-        </p>
-      </div>
-      <div className="text-5xl flex justify-center gap-20 py-3 text-gray-600 pb-3 dark:text-white">
-        <a target={'blank'} href={'https://www.linkedin.com/in/osiris-macias/'}>
-          <AiFillLinkedin />
-        </a>
-        <a target={'blank'} href={'https://github.com/Mancosiris13'}>
-          <AiFillGithub />
-        </a>
-      </div>
-      <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full  w-80 h-80 mt-20 max-w-xl mx-auto ">
-        <img
-          src={osidevsito}
-          alt=""
-          className=" ml-auto mr-auto pt-20 md:h-95 md:w-95"
-          objectFit="cover"
-        />
-      </div>
     </section>
   );
 };

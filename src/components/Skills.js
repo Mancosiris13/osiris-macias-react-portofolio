@@ -1,18 +1,21 @@
 import React from 'react';
-
+import mern from '../media/mern.png';
 const Skill = () => {
   return (
-    <section className="leading-8 text-center">
+    <section className="leading-8 text-center pt-20" id="skills">
       <div>
-        <h3 className="text-3xl py-1  p-10 md:text-4xl pt-10 dark:text-blue-300">
-          Skills
+        <h3 className="text-3xl py-1 font-semibold text-teal-500  p-10 md:text-4xl pt-10 dark:text-blue-300">
+          SKILLS
         </h3>
-        <p className="text-lg py-5 leading-8 text-gray-800  md:text-xl max-w-xl mx-auto dark:text-white">
+        <p className="text-lg py-5 pt-12 leading-8 text-gray-800  md:text-xl max-w-xl mx-auto dark:text-white">
           Since the beginning of my journey as a Frontend Developer, I have
           worked with several technologies such as:{' '}
         </p>
       </div>
-      <div className=" rounded-xl  p-8 text-lg    items-center font-burtons leading-8  md:text-xl dark:text-blue-100">
+      <div
+        className=" rounded-xl  p-8 text-lg    items-center font-burtons leading-8  md:text-xl dark:text-blue-100"
+        style={{ lineHeight: '2' }}
+      >
         <div className=" inline-block">
           <ul>
             <li>
@@ -44,7 +47,7 @@ const Skill = () => {
               <span className="px-5">CSS Frameworks</span>
             </li>
             <li>
-              <span className="px-5">HTTP</span>
+              <span className="px-5">REST API's</span>
             </li>
             <li>
               <span className="px-5">Postman</span>
@@ -63,6 +66,16 @@ const Skill = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="text-center">
+        <img
+          src={mern}
+          alt="mern picture"
+          className="rounded-lg object-cover mx-auto"
+          width={'40%'}
+          height={'40%'}
+          layout="responsive"
+        />
       </div>
     </section>
   );
