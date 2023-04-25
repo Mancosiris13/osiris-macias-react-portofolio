@@ -1,15 +1,17 @@
 import React from 'react';
 import mern from '../media/mern.png';
-const Skill = () => {
+import translations from '../languages/SkillsEn-ES.json';
+const Skill = ({ language }) => {
+  const english = translations[0].en;
+  const spanish = translations[1].es;
   return (
-    <section className="leading-8 text-center pt-20" id="skills">
+    <section className=" leading-8 text-center pt-20" id="skills">
       <div>
-        <h3 className="text-3xl py-1 font-semibold text-teal-500  p-10 md:text-4xl pt-10 dark:text-blue-300">
-          SKILLS
+        <h3 className="text-3xl py-1 font-semibold text-teal-500  p-10 md:text-4xl pt-10 dark:text-blue-300 tracking-wider ">
+          {language === 'en' ? english[0] : spanish[0]}
         </h3>
-        <p className="text-lg py-5 pt-12 leading-8 text-gray-800  md:text-xl max-w-xl mx-auto dark:text-white">
-          Since the beginning of my journey as a Frontend Developer, I have
-          worked with several technologies such as:{' '}
+        <p className="text-lg text-justify py-5 pt-12 leading-8 text-gray-800  md:text-xl max-w-xl mx-auto dark:text-white">
+          {language === 'en' ? english[1] : spanish[1]}
         </p>
       </div>
       <div

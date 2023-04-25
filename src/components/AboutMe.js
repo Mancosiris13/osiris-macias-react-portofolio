@@ -5,14 +5,16 @@ import { BsWhatsapp } from 'react-icons/bs';
 import osidevsito from '../media/ProfilePictureOsiris.jfif';
 import linkedInLight from '../media/LinkedInLight.jpg';
 import linkedInDark from '../media/LinkedInDark.jpg';
-
+import translations from '../languages/AboutMeEn-ES.json';
 // function LinkedInImage({ darkMode }) {
 //   const [imageSrc, setImageSrc] = useState(linkedInLight);
 //   useEffect(() => {
 //     setImageSrc(darkMode ? linkedInDark : linkedInLight);
 //   }, [darkMode]);
 // }
-const AboutMe = ({ darkMode }) => {
+const AboutMe = ({ darkMode, language }) => {
+  const english = translations[0].en;
+  const spanish = translations[1].es;
   return (
     <section id="aboutMe">
       <div className="text-center p-10">
@@ -20,13 +22,10 @@ const AboutMe = ({ darkMode }) => {
           Osiris Macias
         </h2>
         <h3 className="text-2xl font-semibold py-2 md-text-3xl dark:text-blue-300">
-          Frontend Developer
+          {language === 'en' ? english[0] : spanish[0]}
         </h3>
-        <p className="text-lg py-5 leading-8  text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
-          Likable, dedicated and quick learner Frontend Developer with over 1
-          year of experience developing applications using React. Adding to my
-          skills the Backend side of the Stack so I can become a Fullstack
-          Developer. Feel free to reach me out and lets get cracking!
+        <p className="text-lg text-justify py-5 leading-8  text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
+          {language === 'en' ? english[1] : spanish[1]}
         </p>
       </div>
       <div className=" mb-20   pb-20     text-5xl flex justify-center gap-20 py-3 text-gray-600 pb-3 dark:text-white">
@@ -70,7 +69,7 @@ const AboutMe = ({ darkMode }) => {
               href="https://www.linkedin.com/in/osiris-macias/"
               target="_blank"
             >
-              Ver Perfil
+              {language === 'en' ? english[2] : spanish[2]}
             </a>
           </button>
         </div>
