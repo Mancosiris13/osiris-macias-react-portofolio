@@ -1,13 +1,18 @@
-import React from 'react';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import React, { useEffect, useState } from 'react';
+import { AiFillGithub } from 'react-icons/ai';
 import { SiGmail } from 'react-icons/si';
 import { BsWhatsapp } from 'react-icons/bs';
 import osidevsito from '../media/ProfilePictureOsiris.jfif';
 import linkedInLight from '../media/LinkedInLight.jpg';
 import linkedInDark from '../media/LinkedInDark.jpg';
 
-const AboutMe = ({ darkMode, setDarkMode }) => {
+// function LinkedInImage({ darkMode }) {
+//   const [imageSrc, setImageSrc] = useState(linkedInLight);
+//   useEffect(() => {
+//     setImageSrc(darkMode ? linkedInDark : linkedInLight);
+//   }, [darkMode]);
+// }
+const AboutMe = ({ darkMode }) => {
   return (
     <section id="aboutMe">
       <div className="text-center p-10">
@@ -19,9 +24,9 @@ const AboutMe = ({ darkMode, setDarkMode }) => {
         </h3>
         <p className="text-lg py-5 leading-8  text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
           Likable, dedicated and quick learner Frontend Developer with over 1
-          year of experience in learning, creating and maintaining code.
-          Transitioning to Backend Development. Feel free to reach me out and
-          lets get cracking!
+          year of experience developing applications using React. Adding to my
+          skills the Backend side of the Stack so I can become a Fullstack
+          Developer. Feel free to reach me out and lets get cracking!
         </p>
       </div>
       <div className=" mb-20   pb-20     text-5xl flex justify-center gap-20 py-3 text-gray-600 pb-3 dark:text-white">
@@ -47,7 +52,7 @@ const AboutMe = ({ darkMode, setDarkMode }) => {
       </div>
       <div className="rounded-lg relative mx-auto w-80 h-50 border p-4 shadow-lg dark:text-white">
         <img
-          src={darkMode ? linkedInDark : linkedInLight}
+          src={linkedInLight}
           alt=""
           className="mx-auto w-22 h-auto md:w-95 md:h-95"
         />

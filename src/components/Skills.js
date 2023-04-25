@@ -71,10 +71,8 @@ const Skill = () => {
         <img
           src={mern}
           alt="mern picture"
-          className="rounded-lg object-cover mx-auto"
-          width={'40%'}
-          height={'40%'}
-          layout="responsive"
+          className="rounded-lg object-cover mx-auto mt-6"
+          style={{ maxWidth: '100%', height: 'auto' }}
         />
       </div>
     </section>
