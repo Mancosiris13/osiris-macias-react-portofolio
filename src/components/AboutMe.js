@@ -64,13 +64,16 @@ const AboutMe = ({ darkMode, language }) => {
           >
             Osiris Macias
           </a>
-          <button className="mt-2 rounded-xl font-bold text-blue-500 border-blue-500 border hover:border-blue-500 hover:border-2 dark:text-white dark:border-white">
-            <a
-              href="https://www.linkedin.com/in/osiris-macias/"
-              target="_blank"
-            >
-              {language === 'en' ? english[2] : spanish[2]}
-            </a>
+          <button
+            onClick={() =>
+              window.open(
+                'https://www.linkedin.com/in/osiris-macias/',
+                '_blank'
+              )
+            }
+            className="mt-2 rounded-xl font-bold text-blue-500 border-blue-500 border hover:border-blue-500 hover:border-2 dark:text-white dark:border-white"
+          >
+            {language === 'en' ? english[2] : spanish[2]}
           </button>
         </div>
       </div>
