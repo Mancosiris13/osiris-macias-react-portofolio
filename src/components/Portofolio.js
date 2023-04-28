@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import port1 from '../media/port1.png';
 import port2 from '../media/port2.png';
 import port3 from '../media/port3.png';
@@ -10,6 +10,11 @@ import translations from '../languages/PortfolioEN-ES.json';
 const Portofolio = ({ language }) => {
   const english = translations[0].en;
   const spanish = translations[1].es;
+  const [isZoomed, setIsZoomed] = useState(false);
+
+  const handleClick = () => {
+    setIsZoomed((prev) => !prev);
+  };
 
   return (
     <section className="leading-8 text-center pt-10 ">
@@ -26,61 +31,62 @@ const Portofolio = ({ language }) => {
         </p>
       </div>
       <div className=" flex flex-col gap-10 py-10 lg:flex-row lg: flex-wrap">
-        <div className="basis-1/3 flex-1 shadow-xl">
+        <div className="basis-1/3 flex-1 shadow-2xl ">
           <img
             src={port3}
             alt=""
-            className="rounded-lg object-cover"
+            className=" rounded-lg object-cover transition-transform duration-300 transform hover:scale-150"
             width={'100%'}
             height={'100%'}
             layout="responsive"
+            onClick={handleClick}
           />
         </div>
-        <div className="basis-1/3 flex-1">
+        <div className="basis-1/3 flex-1 shadow-2xl">
           <img
             src={port4}
             alt=""
-            className="rounded-lg object-cover"
+            className=" rounded-lg object-cover transition-transform duration-300 transform hover:scale-150"
             width={'100%'}
             height={'100%'}
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1">
+        <div className="basis-1/3 flex-1 shadow-2xl">
           <img
             src={port1}
             alt=""
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover transition-transform duration-300 transform hover:scale-150"
             width={'100%'}
             height={'100%'}
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1">
+        <div className="basis-1/3 flex-1 shadow-2xl">
           <img
             src={port2}
             alt=""
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover transition-transform duration-300 transform hover:scale-150"
             width={'100%'}
             height={'100%'}
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1">
+        <div className="basis-1/3 flex-1 shadow-2xl">
           <img
             src={port5}
             alt=""
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover transition-transform duration-300 transform hover:scale-150"
             width={'100%'}
             height={'100%'}
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1">
+        <div className="basis-1/3 flex-1 shadow-2xl">
           <img
             src={port6}
             alt=""
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover transition-transform duration-300 transform hover:scale-150"
             width={'100%'}
             height={'100%'}
             layout="responsive"

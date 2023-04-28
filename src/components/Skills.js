@@ -33,7 +33,7 @@ const Skill = ({ language }) => {
               <span className="px-5">Express.Js</span>
             </li>
             <li>
-              <span className="px-5">Web Services</span>
+              <span className="px-5">Mongoose.Js</span>
             </li>
             <li>
               <span className="px-5">Responsive CSS</span>
@@ -69,11 +69,11 @@ const Skill = ({ language }) => {
           </ul>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center my-20">
         <img
           src={mern}
           alt="mern picture"
-          className="rounded-lg object-cover mx-auto mt-6"
+          className="rounded-lg object-cover mx-auto mt-6 transition-transform duration-400 transform hover:scale-150"
           style={{ maxWidth: '100%', height: 'auto' }}
         />
       </div>

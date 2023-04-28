@@ -35,10 +35,10 @@ const AboutMe = ({ darkMode, language }) => {
             'https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdBHZPsgNDNGbTTzhllldmWWhgbHZHkSGcdmsNWbGnPHbHJVmMhhchcGsGlnpktMnGtDB'
           }
         >
-          <SiGmail />
+          <SiGmail className="hover:animate-bounce duration-500" />
         </a>
         <a target={'blank'} href={'https://github.com/Mancosiris13'}>
-          <AiFillGithub />
+          <AiFillGithub className="hover:animate-bounce duration-500" />
         </a>
         <a
           target={'blank'}
@@ -46,7 +46,7 @@ const AboutMe = ({ darkMode, language }) => {
             'https://wa.me/5646764711?text=Hello Osiris, I am glad to reach you out via your website!'
           }
         >
-          <BsWhatsapp className="cursor-pointer" />
+          <BsWhatsapp className="cursor-pointer hover:animate-bounce  duration-500" />
         </a>
       </div>
       <div className="rounded-lg relative mx-auto w-80 h-50 border p-4 shadow-lg dark:text-white">
