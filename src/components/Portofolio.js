@@ -31,7 +31,7 @@ const Portofolio = ({ language }) => {
         </p>
       </div>
       <div className=" flex flex-col gap-10 py-10 lg:flex-row lg: flex-wrap">
-        <div className="basis-1/3 flex-1 shadow-2xl ">
+        <div className="basis-1/3 flex-1   hover:z-10 ">
           <img
             src={port3}
             alt=""
@@ -42,7 +42,7 @@ const Portofolio = ({ language }) => {
             onClick={handleClick}
           />
         </div>
-        <div className="basis-1/3 flex-1 shadow-2xl">
+        <div className="basis-1/3 flex-1  hover:z-10 ">
           <img
             src={port4}
             alt=""
@@ -52,7 +52,7 @@ const Portofolio = ({ language }) => {
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1 shadow-2xl">
+        <div className="basis-1/3 flex-1   hover:z-10">
           <img
             src={port1}
             alt=""
@@ -62,7 +62,7 @@ const Portofolio = ({ language }) => {
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1 shadow-2xl">
+        <div className="basis-1/3 flex-1 hover:z-10 ">
           <img
             src={port2}
             alt=""
@@ -72,7 +72,7 @@ const Portofolio = ({ language }) => {
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1 shadow-2xl">
+        <div className="basis-1/3 flex-1   hover:z-10">
           <img
             src={port5}
             alt=""
@@ -82,7 +82,7 @@ const Portofolio = ({ language }) => {
             layout="responsive"
           />
         </div>
-        <div className="basis-1/3 flex-1 shadow-2xl">
+        <div className="basis-1/3 flex-1 hover:z-10 ">
           <img
             src={port6}
             alt=""
