@@ -69,7 +69,7 @@ const Skill = ({ language }) => {
           </ul>
         </div>
       </div>
-      <div className="text-center my-20">
+      <div className="text-center my-20 ">
         <img
           src={mern}
           alt="mern picture"

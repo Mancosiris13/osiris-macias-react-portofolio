@@ -1,0 +1,26 @@
+[
+  {
+    "weather-app": {
+      "en": "Application to query the weather on different cities all around the world, and displaying the forecast for the next seven days. Consuming 2 public APIs, one to get the cities and the other one to get the weather for the selected city.",
+      "es": "Aplicación para consultar el clima en diferentes ciudades del mundo y visualizar la previsión meteorológica para los próximos siete días. Consumiendo 2 API públicas, una para obtener las ciudades y la otra para obtener el clima de la ciudad seleccionada."
+    }
+  },
+  {
+    "shopping-cart": {
+      "en": "Shopping cart using Redux-Toolkit and React-Redux, able create redux actions and reducers, updating stores, useDispatch Hook, useSelector Hook, Fetching API data with createAsyncThunk and using JSON-Server.",
+      "es": "Carrito de compras que usa Redux-Toolkit y React-Redux, puede crear acciones y reductores de redux, actualizar tiendas, usar Dispatch Hook, useSelector Hook, obtener datos de API con createAsyncThunk y usar JSON-Server."
+    }
+  },
+  {
+    "pet-store-appointments": {
+      "en": "React interface using tailwing and hooks to build an appointment system for a pet store, eable to register new appointments,  sort the appointments by name, date and owner name, ascending and descending order.",
+      "es": "Interfaz en React usando tailwind y hooks para construir un sistema de citas para una veterinaria, capaz de registrar nuevas citas, ordenar las citas por nombre del animal, fecha de ingreso y nombre del dueño, en orde ascendente y descentente."
+    }
+  },
+  {
+    "delta-webpage": {
+      "en": " Landing webpage using styled components,  smooth scroll effect, react router, carousel and a responsive layout.",
+      "es": "Landing webpage usando styled components, efecto de desplazamiento suave, react router, carousel y un diseño responsivo"
+    }
+  }
+]
