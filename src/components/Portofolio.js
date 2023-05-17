@@ -30,7 +30,7 @@ const Portofolio = ({ language }) => {
           </h3>
 
           <p
-            className="text-lg text-justify py-5 pt-12 leading-8  text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white 
+            className="text-lg text-justify py-5 pt-12 leading-8  text-gray-800 md:text-xl  max-w-xl mx-auto dark:text-white 
         "
           >
             {language === 'en'

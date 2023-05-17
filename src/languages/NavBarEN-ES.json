@@ -1,4 +1,12 @@
 [
-  { "en": ["About Me", "Skills", "Portfolio", "Resume"] },
-  { "es": ["Acerca de mí", "Habilidades", "Portafolio", "Currículum"] }
+  { "en": ["About Me", "Skills", "Portfolio", "Contact", "Resume"] },
+  {
+    "es": [
+      "Acerca de mí",
+      "Habilidades",
+      "Portafolio",
+      "Contacto",
+      "Currículum"
+    ]
+  }
 ]

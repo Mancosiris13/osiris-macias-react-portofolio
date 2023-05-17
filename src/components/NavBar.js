@@ -17,7 +17,7 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
   // console.log(spanish.es);
   return (
     <section className="min-h-min" id="aboutMe">
-      <nav className="py-10 mb-12 flex flex-col items-center justify-between md:flex-row md:items-center">
+      <nav className="py-6 mb-8 md:mb-12 flex flex-col items-center justify-between md:flex-row md:items-center ">
         <ul className="flex flex-col sm:flex-row items-center text-xl font-burtons dark:text-white">
           <li className="py-2 sm:py-0 px-4 sm:px-6">
             <ScrollLink
@@ -58,6 +58,19 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
               {language === 'en' ? english[2] : spanish[2]}
             </ScrollLink>
           </li>
+          <li className="py-2 sm:py-0 px-4 sm:px-6">
+            <ScrollLink
+              activeClass="active"
+              to="footer"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out"
+            >
+              {language === 'en' ? english[3] : spanish[3]}
+            </ScrollLink>
+          </li>
         </ul>
         <div className="flex items-center pt-2 mt-4">
           <button
@@ -84,7 +97,7 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
             href="Osiris Macias-Frontend Developer.pdf"
             download="Osiris Macias-Frontend Developer.pdf"
           >
-            {language === 'en' ? english[3] : spanish[3]}
+            {language === 'en' ? english[4] : spanish[4]}
             <BsFillCloudArrowDownFill
               className="inline ml-2
             "
