@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { BsFillCloudArrowDownFill } from 'react-icons/bs';
 import { FiSun } from 'react-icons/fi';
@@ -6,6 +6,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import translations from '../languages/NavBarEN-ES.json';
 import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
   const toggleLanguage = () => {
@@ -18,13 +19,39 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
   // console.log(english.en);
   // console.log(spanish.es);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const handleCloseNavBar = () => {
+    if (menuOpen === true) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 400) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className=" md:py-6 md:mb-8 md:mb-12  md:flex-col mditems-start md:justify-between  md:items-center md:h-auto  ">
+      <nav
+        id="navBar"
+        className=" md:py-6 md:mb-8 md:mb-12  md:flex-col mditems-start md:justify-between  md:items-center md:h-auto  "
+      >
         <div className="relative font-bold md:font-normal dark:text-white dark:bg-gray-800 ">
           <button
             className="block md:hidden focus:outline-none  "
@@ -54,7 +81,6 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  onClick={() => setMenuOpen(!menuOpen)}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
                 >
                   {language === 'en' ? english[0] : spanish[0]}
@@ -68,7 +94,6 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  onClick={() => setMenuOpen(!menuOpen)}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
                 >
                   {language === 'en' ? english[1] : spanish[1]}
@@ -82,7 +107,6 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  onClick={() => setMenuOpen(!menuOpen)}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
                 >
                   {language === 'en' ? english[2] : spanish[2]}
@@ -96,7 +120,6 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  onClick={() => setMenuOpen(!menuOpen)}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out  md:text-xl text-2xl font-burtons"
                 >
                   {language === 'en' ? english[3] : spanish[3]}
@@ -135,6 +158,26 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
           <BsFillCloudArrowDownFill className="inline ml-2" />
         </a>
       </div>
+      {showBackToTop && (
+        <ScrollLink
+          activeClass="active"
+          to="navBar"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => handleCloseNavBar()}
+          className="items-center cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-lg sm:text-sm font-burtons"
+        >
+          <button
+            className=" flex items-center justify-center fixed bottom-0 right-0 p-1   
+           focus:outline-none  rounded-md "
+            title="Return top"
+          >
+            <BsFillArrowUpCircleFill className="text-green-500 text-3xl dark:text-white" />
+          </button>
+        </ScrollLink>
+      )}
     </>
   );
 };

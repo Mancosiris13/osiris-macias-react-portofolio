@@ -6,6 +6,7 @@ import osidevsito from '../media/ProfilePictureOsiris.jfif';
 import linkedInLight from '../media/LinkedInLight.jpg';
 import linkedInDark from '../media/LinkedInDark.jpg';
 import translations from '../languages/AboutMeEn-ES.json';
+
 // function LinkedInImage({ darkMode }) {
 //   const [imageSrc, setImageSrc] = useState(linkedInLight);
 //   useEffect(() => {
