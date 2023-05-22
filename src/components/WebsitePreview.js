@@ -61,7 +61,7 @@ function WebsitePreview({ url, thumbnail, language, traductions }) {
               onClick={handleButtonClick}
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 md:text-xl sm:: text-sm"
             >
-              {language === 'en' ? 'Show Website' : 'Mostrar Sitio Web'}
+              {language === 'en' ? 'Display Website' : 'Mostrar Sitio Web'}
             </button>
           </div>
         </div>
