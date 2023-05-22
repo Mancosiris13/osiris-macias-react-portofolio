@@ -25,8 +25,8 @@
   },
   {
     "task-app": {
-      "en": "Completly FullStack Application, using Node.js, Express.js, Mongoose.js, MongoDB and React to build this To-do List, Backend made from scratch applying JSON Web Token to authenticate users. You can create an account and manage it from setting. Application sends confirmation mails for creating, updating and deleting your account.",
-      "es": "Aplicación completamente FullStack, utilizando Node.js, Express.js, Mongoose.js, MongoDB y React para construir esta lista de tareas pendientes, Backend hecho desde cero aplicando JSON Web Token para autenticar a los usuarios. Puede crear una cuenta y administrarla desde la recepción, La aplicación envía correos de confirmación para crear, actualizar y eliminar su cuenta."
+      "en": " FullStack Application, using Node.js, Express.js, Mongoose.js, MongoDB and React to build this To-do List, Backend made from scratch applying JSON Web Token to authenticate users. You can create an account and manage it from setting. Application sends confirmation mails for creating, updating and deleting your account.",
+      "es": "Aplicación FullStack, utilizando Node.js, Express.js, Mongoose.js, MongoDB y React para construir esta lista de tareas pendientes, Backend hecho desde cero aplicando JSON Web Token para autenticar a los usuarios. Puede crear una cuenta y administrarla desde la recepción, La aplicación envía correos de confirmación para crear, actualizar y eliminar su cuenta."
     }
   }
 ]
