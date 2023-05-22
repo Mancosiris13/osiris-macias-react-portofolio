@@ -45,7 +45,9 @@ const Portofolio = ({ language }) => {
           <div className="md:absolute md:top-0 md:left-0 md:z-10 sm:static sm:top-auto sm:left-auto sm:z-auto">
             <AiFillStar className="inline-block text-yellow-400 font-bold text-xl m-3" />
             <span className="inline-block font-semibold ">
-              Most Recent Project
+              {language === 'en'
+                ? 'Most Recent Project'
+                : 'Proyecto Mas Reciente'}
             </span>
             <AiFillStar className="inline-block text-yellow-400 font-bold text-xl m-3" />
           </div>
