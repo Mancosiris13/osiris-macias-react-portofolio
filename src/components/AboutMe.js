@@ -2,17 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { SiGmail } from 'react-icons/si';
 import { BsWhatsapp } from 'react-icons/bs';
-import osidevsito from '../media/ProfilePictureOsiris.jfif';
+// import osidevsito from '../media/ProfilePictureOsiris.jfif';
+import saludarAazul from '../media/saludar-azul.png';
+import saludarBlanco from '../media/saludar-blanco.png';
+
 import linkedInLight from '../media/LinkedInLight.jpg';
 import linkedInDark from '../media/LinkedInDark.jpg';
 import translations from '../languages/AboutMeEn-ES.json';
 
-// function LinkedInImage({ darkMode }) {
-//   const [imageSrc, setImageSrc] = useState(linkedInLight);
-//   useEffect(() => {
-//     setImageSrc(darkMode ? linkedInDark : linkedInLight);
-//   }, [darkMode]);
-// }
 const AboutMe = ({ darkMode, language }) => {
   const english = translations[0].en;
   const spanish = translations[1].es;
@@ -56,7 +53,11 @@ const AboutMe = ({ darkMode, language }) => {
           alt=""
           className="mx-auto w-22 h-auto md:w-95 md:h-95"
         />
-        <img src={osidevsito} alt="" className="rounded-full w-20 my-2 ml-3" />
+        <img
+          src={darkMode ? saludarBlanco : saludarAazul}
+          alt=""
+          className="rounded-full w-20 my-2 ml-3"
+        />
         <div className="flex flex-col ">
           <a
             target={'_blank'}

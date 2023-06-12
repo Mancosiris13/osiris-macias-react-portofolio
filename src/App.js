@@ -24,10 +24,30 @@ function App() {
           language={language}
           setLanguage={setLanguage}
         />
-        <AboutMe language={language} setLanguage={setLanguage} />
-        <Skill language={language} setLanguage={setLanguage} />
-        <Portofolio language={language} setLanguage={setLanguage} />
-        <Footer language={language} setLanguage={setLanguage} />
+        <AboutMe
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          language={language}
+          setLanguage={setLanguage}
+        />
+        <Skill
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          language={language}
+          setLanguage={setLanguage}
+        />
+        <Portofolio
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          language={language}
+          setLanguage={setLanguage}
+        />
+        <Footer
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          language={language}
+          setLanguage={setLanguage}
+        />
       </main>
     </div>
   );

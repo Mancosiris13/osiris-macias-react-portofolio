@@ -19,14 +19,20 @@
   },
   {
     "delta-webpage": {
-      "en": " Landing webpage using styled components,  smooth scroll effect, react router, carousel and a responsive layout.",
-      "es": "Landing webpage usando styled components, efecto de desplazamiento suave, react router, carousel y un diseño responsivo"
+      "en": " Landing webpage using styled components,  smooth scroll effect, react router, carousel and a responsive layout.   ",
+      "es": "Landing webpage usando styled components, efecto de desplazamiento suave, react router, carousel y un diseño responsivo.                                   "
     }
   },
   {
     "task-app": {
       "en": " FullStack Application, using Node.js, Express.js, Mongoose.js, MongoDB and React to build this To-do List, Backend made from scratch applying JSON Web Token to authenticate users. You can create an account and manage it from setting. Application sends confirmation mails for creating, updating and deleting your account.",
       "es": "Aplicación FullStack, utilizando Node.js, Express.js, Mongoose.js, MongoDB y React para construir esta lista de tareas pendientes, Backend hecho desde cero aplicando JSON Web Token para autenticar a los usuarios. Puede crear una cuenta y administrarla desde la recepción, La aplicación envía correos de confirmación para crear, actualizar y eliminar su cuenta."
+    }
+  },
+  {
+    "krypton-bot": {
+      "en": "Website for a Start Up developing CSHTML code, an ASP.NET view engine for management of accounts, and configuration for boting. In charge of the responsive design of the website and its redesign. ",
+      "es": "Sitio web para una Start Up que desarrolla código CSHTML, un motor de visualización ASP.NET para la administración de cuentas y configuración para botear. Encargado del diseño responsivo del sitio web y rediseño del mismo."
     }
   }
 ]

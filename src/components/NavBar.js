@@ -26,13 +26,15 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
   };
   const handleCloseNavBar = () => {
     if (menuOpen === true) {
-      setMenuOpen(false);
+      setTimeout(() => {
+        setMenuOpen(false);
+      }, 600);
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 400) {
+      if (window.pageYOffset > 1) {
         setShowBackToTop(true);
       } else {
         setShowBackToTop(false);
@@ -52,7 +54,13 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
         id="navBar"
         className=" md:py-6 md:mb-8 md:mb-12  md:flex-col mditems-start md:justify-between  md:items-center md:h-auto  "
       >
-        <div className="relative font-bold md:font-normal dark:text-white dark:bg-gray-800 ">
+        {/* <nav
+        id="navBar"
+        className={`z-10 bg-white dark:bg-transparent md:py-6 md:mb-8 md:mb-12 md:flex-col md:items-start md:justify-between md:h-auto md:mx-2 ${
+          showBackToTop ? 'sticky top-0' : ''
+        }`}
+      > */}
+        <div className="relative font-bold md:font-normal dark:text-white  ">
           <button
             className="block md:hidden focus:outline-none  "
             onClick={toggleMenu}
@@ -62,7 +70,7 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
               viewBox="0 0 24 24"
             />
           </button>
-          <div className="text-center   ">
+          <div className="text-center    ">
             <ul
               className={`${
                 menuOpen ? 'block' : 'hidden'
@@ -82,6 +90,7 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   offset={-70}
                   duration={500}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
+                  onClick={handleCloseNavBar}
                 >
                   {language === 'en' ? english[0] : spanish[0]}
                 </ScrollLink>
@@ -95,6 +104,7 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   offset={-70}
                   duration={500}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
+                  onClick={handleCloseNavBar}
                 >
                   {language === 'en' ? english[1] : spanish[1]}
                 </ScrollLink>
@@ -108,6 +118,7 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   offset={-70}
                   duration={500}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
+                  onClick={handleCloseNavBar}
                 >
                   {language === 'en' ? english[2] : spanish[2]}
                 </ScrollLink>
@@ -121,6 +132,7 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   offset={-70}
                   duration={500}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out  md:text-xl text-2xl font-burtons"
+                  onClick={handleCloseNavBar}
                 >
                   {language === 'en' ? english[3] : spanish[3]}
                 </ScrollLink>

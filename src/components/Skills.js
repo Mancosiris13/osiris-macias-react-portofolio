@@ -14,61 +14,61 @@ const Skill = ({ language }) => {
           {language === 'en' ? english[1] : spanish[1]}
         </p>
       </div>
-      <div
-        className=" rounded-xl  p-8 text-lg    items-center font-burtons leading-8  md:text-xl dark:text-blue-100"
-        style={{ lineHeight: '2' }}
-      >
-        <div className=" inline-block">
-          <ul>
-            <li>
-              <span className="px-5 ">JavaScript</span>
-            </li>
-            <li>
-              <span className="px-5">React.Js</span>
-            </li>
-            <li>
-              <span className="px-5">Node.Js</span>
-            </li>
-            <li>
-              <span className="px-5">Express.Js</span>
-            </li>
-            <li>
-              <span className="px-5">Mongoose.Js</span>
-            </li>
-            <li>
-              <span className="px-5">Responsive CSS</span>
-            </li>
-            <li>
-              <span className="px-5">Sass</span>
-            </li>
-          </ul>
+      <div className=" mb-32 rounded-xl p-8 text-lg font-burtons leading-8 md:text-xl dark:text-blue-100 grid grid-cols-2 gap-8 max-md:block ">
+        <div className="border-blue-400 dark:border-gray-50 p-4 border-4 rounded-lg dark:text-white max-md:mb-8">
+          {/* <h3 className="text-2xl font-bold mb-4">FRONTEND</h3> */}
+          <div className="space-y-2">
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              JavaScript
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              React.Js
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Tailwind
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Express.Js
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Mongoose.Js
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Responsive CSS
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Sass
+            </span>
+          </div>
         </div>
-        <div className=" inline-block">
-          <ul>
-            <li>
-              <span className="px-5">CSS Frameworks</span>
-            </li>
-            <li>
-              <span className="px-5">REST API's</span>
-            </li>
-            <li>
-              <span className="px-5">Postman</span>
-            </li>
-            <li>
-              <span className="px-5">MongoDB</span>
-            </li>
-            <li>
-              <span className="px-5">AWS</span>
-            </li>
-            <li>
-              <span className="px-5">Node.Js</span>
-            </li>
-            <li>
-              <span className="px-5">Git/Github</span>
-            </li>
-          </ul>
+        <div className=" border-blue-400 dark:border-gray-50 p-4 border-4 rounded-lg">
+          {/* <h3 className="text-2xl font-bold mb-4">BACKEND</h3> */}
+          <div className="space-y-2">
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Node.Js
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              REST API's
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Postman
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              MongoDB
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              AWS
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Node.Js
+            </span>
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+              Git/Github
+            </span>
+          </div>
         </div>
       </div>
+
       <div className="text-center my-20 ">
         <img
           src={mern}

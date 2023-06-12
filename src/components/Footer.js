@@ -3,6 +3,9 @@ import AboutMe from './AboutMe';
 import { AiFillPhone } from 'react-icons/ai';
 import { GrMail, GrLinkedin } from 'react-icons/gr';
 import { IoLogoWhatsapp } from 'react-icons/io';
+import llamarAzul from '../media/llamar-azul.png';
+import llamarBlanco from '../media/llamar-blanco.png';
+
 const Footer = ({ darkMode, language }) => {
   return (
     <footer
@@ -10,9 +13,16 @@ const Footer = ({ darkMode, language }) => {
       id="footer"
     >
       <div className="mb-8 dark:text-white  text-lg md:text-xl lg:text-2xl">
-        <h1 className="text-2xl font-bold mb-4 dark:text-blue-300">
-          {language === 'en' ? 'CONTACT' : 'CONTACTO'}
-        </h1>
+        <div className="flex flex-col items-center">
+          <h1 className="text-2xl font-bold mb-4 dark:text-blue-300">
+            {language === 'en' ? 'CONTACT' : 'CONTACTO'}
+          </h1>
+          <img
+            src={darkMode ? llamarBlanco : llamarAzul}
+            alt=""
+            className="rounded-full w-20 my-2 ml-3"
+          />
+        </div>
 
         <ul className=" max-w-xl mx-auto ">
           <li className="inline-block ">
