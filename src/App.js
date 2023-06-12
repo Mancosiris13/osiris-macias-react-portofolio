@@ -15,8 +15,8 @@ function App() {
   return (
     <div className={darkMode ? 'dark' : ''}>
       <main
-        className=" bg-white px-10 md:px-20 lg:px-40 
-      dark:bg-gradient-to-b from-gray-800 to-gray-600"
+        className=" bg-stone-300 dark:bg-gradient-to-b from-gray-800 to-gray-700 px-10 md:px-20 lg:px-40 
+     "
       >
         <NavBar
           darkMode={darkMode}

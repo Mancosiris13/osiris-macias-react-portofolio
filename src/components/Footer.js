@@ -9,7 +9,8 @@ import llamarBlanco from '../media/llamar-blanco.png';
 const Footer = ({ darkMode, language }) => {
   return (
     <footer
-      className="bg-slate-300 text-center dark:bg-gray-800 py-10 mt-10"
+      // className="bg-slate-300 text-center dark:bg-gray-800 py-10 mt-10"
+      className=" text-center py-10 mt-10"
       id="footer"
     >
       <div className="mb-8 dark:text-white  text-lg md:text-xl lg:text-2xl">

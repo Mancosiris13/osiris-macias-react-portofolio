@@ -19,15 +19,27 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
   // console.log(english.en);
   // console.log(spanish.es);
   const [menuOpen, setMenuOpen] = useState(false);
+  console.log(menuOpen);
+  if (menuOpen === true) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const toggleMenu = async () => {
+    await setMenuOpen(!menuOpen);
+    console.log(menuOpen);
+  };
+
+  const handleCloseNavBarOnAboutMe = () => {
+    setMenuOpen(false);
   };
   const handleCloseNavBar = () => {
     if (menuOpen === true) {
       setTimeout(() => {
-        setMenuOpen(false);
+        setMenuOpen(!menuOpen);
+        console.log(menuOpen);
       }, 600);
     }
   };
@@ -83,14 +95,14 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
             >
               <li className="py-2 sm:py-0 px-4 sm:px-6 ">
                 <ScrollLink
-                  activeClass="active"
-                  to="aboutMe"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
+                  // activeClass="active"
+                  // to="aboutMe"
+                  // spy={true}
+                  // smooth={true}
+                  // offset={-70}
+                  // duration={500}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
-                  onClick={handleCloseNavBar}
+                  onClick={handleCloseNavBarOnAboutMe}
                 >
                   {language === 'en' ? english[0] : spanish[0]}
                 </ScrollLink>
