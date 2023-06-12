@@ -6,8 +6,8 @@ import { BsWhatsapp } from 'react-icons/bs';
 import saludarAazul from '../media/saludar-azul.png';
 import saludarBlanco from '../media/saludar-blanco.png';
 
-import linkedInLight from '../media/LinkedInLight.jpg';
-import linkedInDark from '../media/LinkedInDark.jpg';
+import linkedInLight from '../media/LinkedInLight.png';
+import linkedInDark from '../media/LinkedInDark.png';
 import translations from '../languages/AboutMeEn-ES.json';
 
 const AboutMe = ({ darkMode, language }) => {
@@ -47,9 +47,9 @@ const AboutMe = ({ darkMode, language }) => {
           <BsWhatsapp className="cursor-pointer hover:animate-bounce  duration-500" />
         </a>
       </div>
-      <div className="rounded-lg relative mx-auto w-80 h-50 border p-4 shadow-lg dark:text-white">
+      <div className="rounded-lg relative mx-auto w-80 h-50 border border-blue-600 dark:border-white p-4 shadow-lg dark:text-white">
         <img
-          src={linkedInLight}
+          src={darkMode ? linkedInDark : linkedInLight}
           alt=""
           className="mx-auto w-22 h-auto md:w-95 md:h-95"
         />
