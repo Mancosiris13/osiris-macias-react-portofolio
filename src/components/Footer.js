@@ -57,18 +57,23 @@ const Footer = ({ darkMode, language }) => {
         </ul>
       </div>
       <div>
-        <p className="text-gray-800 text-2xl dark:text-white py-15 inline-block ">
-          {`© Osiris Macias 2023`.split('').map((char, index) => {
-            if (char === ' ') {
-              return <span key={index}>&nbsp;</span>;
-            } else {
-              return (
-                <span key={index} className="hover:animate-bounce inline-block">
-                  {char}
-                </span>
-              );
-            }
-          })}
+        <p className="text-gray-800 text-md dark:text-white py-15 inline-block ">
+          {`© Osiris Macias 2023 - Todos los derechos reservados.`
+            .split('')
+            .map((char, index) => {
+              if (char === ' ') {
+                return <span key={index}>&nbsp;</span>;
+              } else {
+                return (
+                  <span
+                    key={index}
+                    className="hover:animate-bounce inline-block"
+                  >
+                    {char}
+                  </span>
+                );
+              }
+            })}
         </p>
       </div>
       <div></div>

@@ -28,7 +28,7 @@ const Skill = ({ language }) => {
               Tailwind
             </span>
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
-              Express.Js
+              REST API's
             </span>
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
               Mongoose.Js
@@ -48,7 +48,7 @@ const Skill = ({ language }) => {
               Node.Js
             </span>
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
-              REST API's
+              Express.Js
             </span>
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
               Postman
@@ -57,7 +57,7 @@ const Skill = ({ language }) => {
               MongoDB
             </span>
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
-              AWS
+              HTTP
             </span>
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
               Node.Js
