@@ -36,12 +36,13 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
     setMenuOpen(false);
   };
   const handleCloseNavBar = () => {
-    if (menuOpen === true) {
-      setTimeout(() => {
-        setMenuOpen(!menuOpen);
-        console.log(menuOpen);
-      }, 600);
-    }
+    // if (menuOpen === true) {
+    //   setTimeout(() => {
+    //     setMenuOpen(!menuOpen);
+    //     console.log(menuOpen);
+    //   }, 600);
+    // }
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -112,9 +113,9 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   activeClass="active"
                   to="skills"
                   spy={true}
-                  smooth={true}
+                  smooth={false}
                   offset={-70}
-                  duration={500}
+                  duration={600}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
                   onClick={handleCloseNavBar}
                 >
@@ -126,9 +127,9 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   activeClass="active"
                   to="portfolio"
                   spy={true}
-                  smooth={true}
+                  smooth={false}
                   offset={-70}
-                  duration={500}
+                  duration={600}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out md:text-xl text-2xl font-burtons"
                   onClick={handleCloseNavBar}
                 >
@@ -140,9 +141,9 @@ const NavBar = ({ darkMode, setDarkMode, language, setLanguage }) => {
                   activeClass="active"
                   to="footer"
                   spy={true}
-                  smooth={true}
+                  smooth={false}
                   offset={-70}
-                  duration={500}
+                  duration={1000}
                   className="cursor-pointer border-b-2 border-transparent hover:border-teal-600 transition duration-300 ease-in-out  md:text-xl text-2xl font-burtons"
                   onClick={handleCloseNavBar}
                 >
