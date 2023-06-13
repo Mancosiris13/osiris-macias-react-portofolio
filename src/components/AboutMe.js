@@ -22,7 +22,10 @@ const AboutMe = ({ darkMode, language }) => {
         <h3 className="text-2xl font-semibold py-2 md-text-3xl dark:text-blue-300">
           {language === 'en' ? english[0] : spanish[0]}
         </h3>
-        <p className="text-lg text-justify py-5 leading-8  text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
+        <p
+          id="skills"
+          className="text-lg text-justify py-5 leading-8  text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white"
+        >
           {language === 'en' ? english[1] : spanish[1]}
         </p>
       </div>
@@ -33,7 +36,7 @@ const AboutMe = ({ darkMode, language }) => {
             'https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdBHZPsgNDNGbTTzhllldmWWhgbHZHkSGcdmsNWbGnPHbHJVmMhhchcGsGlnpktMnGtDB'
           }
         >
-          <SiGmail className="hover:animate-bounce duration-500" id="skills" />
+          <SiGmail className="hover:animate-bounce duration-500" />
         </a>
         <a target={'blank'} href={'https://github.com/Mancosiris13'}>
           <AiFillGithub className="hover:animate-bounce duration-500" />

@@ -18,7 +18,10 @@ const Skill = ({ language }) => {
         <div className="border-blue-400 dark:border-gray-50 p-4 border-4 rounded-lg dark:text-white max-md:mb-8">
           {/* <h3 className="text-2xl font-bold mb-4">FRONTEND</h3> */}
           <div className="space-y-2">
-            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+            <span
+              id="portfolio"
+              className="px-5 py-2  rounded-lg block border border-gray-400"
+            >
               JavaScript
             </span>
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
@@ -62,10 +65,7 @@ const Skill = ({ language }) => {
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
               Node.Js
             </span>
-            <span
-              id="portfolio"
-              className="px-5 py-2  rounded-lg block border border-gray-400"
-            >
+            <span className="px-5 py-2  rounded-lg block border border-gray-400">
               Git/Github
             </span>
           </div>
