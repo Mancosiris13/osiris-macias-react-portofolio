@@ -33,7 +33,7 @@ const AboutMe = ({ darkMode, language }) => {
             'https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdBHZPsgNDNGbTTzhllldmWWhgbHZHkSGcdmsNWbGnPHbHJVmMhhchcGsGlnpktMnGtDB'
           }
         >
-          <SiGmail className="hover:animate-bounce duration-500" />
+          <SiGmail className="hover:animate-bounce duration-500" id="skills" />
         </a>
         <a target={'blank'} href={'https://github.com/Mancosiris13'}>
           <AiFillGithub className="hover:animate-bounce duration-500" />

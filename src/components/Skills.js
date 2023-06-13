@@ -5,7 +5,7 @@ const Skill = ({ language }) => {
   const english = translations[0].en;
   const spanish = translations[1].es;
   return (
-    <section className=" leading-8 text-center pt-20" id="skills">
+    <section className=" leading-8 text-center pt-20">
       <div>
         <h3 className="text-3xl py-1 font-semibold text-teal-500  p-10 md:text-4xl pt-10 dark:text-blue-300 tracking-wider ">
           {language === 'en' ? english[0] : spanish[0]}
@@ -62,7 +62,10 @@ const Skill = ({ language }) => {
             <span className="px-5 py-2  rounded-lg block border border-gray-400">
               Node.Js
             </span>
-            <span className="px-5 py-2  rounded-lg block border border-gray-400">
+            <span
+              id="portfolio"
+              className="px-5 py-2  rounded-lg block border border-gray-400"
+            >
               Git/Github
             </span>
           </div>

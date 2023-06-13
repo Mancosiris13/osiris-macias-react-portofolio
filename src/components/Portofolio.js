@@ -38,7 +38,7 @@ const Portofolio = ({ language }) => {
   return (
     <>
       <section className="leading-8 text-center pt-10 ">
-        <div id="portfolio">
+        <div>
           <h3 className="text-3xl py-1 font-semibold text-teal-500  p-10 md:text-4xl pt-10 dark:text-blue-300 tracking-wider">
             {language === 'en'
               ? translations[0]['en'].header
